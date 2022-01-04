@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+}
+.box{
+    width: 400px;
+    height: 400px;
+   
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.box1{
+    width: 900px;
+    height: 200px;
+    position: absolute;
+    background-color:#ffff;
+   
+    animation-name: aylan;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+    z-index: 1;
+}
+@keyframes aylan{
+
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(720deg);
+    }
+}
+.box2{
+    width: 390px;
+    height: 390px;
+    position: absolute;
+    background-color: #fff;
+    z-index: 2 ;
+    background-image: url(../amaliyot1/img/istockphoto-1299187436-170667a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.text{
+    margin: 20px;
+}
